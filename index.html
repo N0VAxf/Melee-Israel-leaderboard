@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Melee Israel leaderboard</title>
-    <script type="module" crossorigin src="/assets/index.4c2f72b8.js"></script>
-    <link rel="modulepreload" href="/assets/vendor.bba84ff7.js">
-    <link rel="stylesheet" href="/assets/index.863abc2a.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="./IML logo.png" width="100vw">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="https://slippi.gg/netplay" target="_blank">Download Slippi Online</a>
+                <a class="nav-link" href="https://smash.gg/tournament/iml-1/details" target="_blank">Closest Tournament</a>
+                <a class="nav-link" href="https://discord.gg/S2hhkSSGEN" target="_blank">Discord Server</a>
+              </div>
+            </div>
+          </div>
+      </nav>
+
+      <main>
+        <div class="leaderboard centered">
+          
+          <header class="leaderboard-header">
+            <div class="icon">
+              
+            </div>
+            <div class="title">
+              <h3>Ranking</h3>
+            </div>
+          </header>
+          <!--5 letter name 19 length, higher reduce by the 1 for every number, lower increase the number by 1-->
+          <div class="leaderboard-body">
+            <p>Rank  |  Name  |⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Points</p>
+            <ol>
+              <li>Roiロイ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀100</li>
+            </ol>
+            
+          </div>
+          
+        </div>
+      </main>
+
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--normal js file-->
+    <script src="./index.js" />
+</body>
 </html>
